@@ -4,7 +4,7 @@
 [<img alt="crates.io" src="https://img.shields.io/crates/v/cargo-docs-rs.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/cargo-docs-rs)
 [<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/dtolnay/cargo-docs-rs/ci.yml?branch=master&style=for-the-badge" height="20">](https://github.com/dtolnay/cargo-docs-rs/actions?query=branch%3Amaster)
 
-Run `cargo rustdoc` with the same options that would be used by docs.rs, taking
+Run `cargo install cargo-docs-rs` with the same options that would be used by docs.rs, taking
 into account the `package.metadata.docs.rs` configured in Cargo.toml.
 
 ## Example
