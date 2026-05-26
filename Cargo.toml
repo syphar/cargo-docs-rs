@@ -7,7 +7,7 @@ description = "Imitate the documentation build that docs.rs would do"
 edition = "2021"
 keywords = ["cargo", "subcommand", "docs-rs", "documentation"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/dtolnay/cargo-docs-rs"
+repository = "https://github.com/syphar/cargo-docs-rs"
 rust-version = "1.86"
 
 [dependencies]
