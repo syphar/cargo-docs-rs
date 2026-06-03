@@ -23,3 +23,9 @@ shlex = "2"
 target-triple = "1"
 termcolor = "1.4"
 toml = { version = "1", default-features = false, features = ["display", "serde"] }
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
+target-triple = "1"
