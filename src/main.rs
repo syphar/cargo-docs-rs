@@ -249,6 +249,7 @@ fn do_main() -> Result<()> {
         "--config",
         r#"doc.extern-map.registries.crates-io="https://docs.rs""#,
     );
+    cargo_rustdoc.arg("-Zrustdoc-scrape-examples");
 
     cargo_rustdoc.args(&metadata.cargo_args);
 
