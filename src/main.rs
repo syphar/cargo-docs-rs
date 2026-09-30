@@ -226,6 +226,12 @@ fn do_main() -> Result<()> {
         0..0,
         ["-Zunstable-options".to_owned(), "--cfg=docsrs".to_owned()],
     );
+    if args.experimental {
+        rustdocflags.splice(
+            2..2,
+            ["-D".to_owned(), "rustdoc::invalid_html_tags".to_owned()],
+        );
+    }
     if let Some(encoded_rustdocflags) = env::var_os("CARGO_ENCODED_RUSTDOCFLAGS") {
         if let Some(encoded_rustdocflags) = encoded_rustdocflags.to_str() {
             rustdocflags.splice(2..2, encoded_rustdocflags.split('\x1f').map(str::to_owned));

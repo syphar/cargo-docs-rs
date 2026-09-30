@@ -29,6 +29,10 @@ pub struct Doc {
     #[arg(short, long)]
     pub verbose: bool,
 
+    /// Enable experimental docs.rs build defaults
+    #[arg(long)]
+    pub experimental: bool,
+
     /// Coloring: auto, always, never
     #[arg(long, value_name = "WHEN", hide_possible_values = true)]
     pub color: Option<Coloring>,

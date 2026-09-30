@@ -7,6 +7,9 @@
 Run `cargo rustdoc` with the same options that would be used by docs.rs, taking
 into account the `package.metadata.docs.rs` configured in Cargo.toml.
 
+Pass `--experimental` to opt into proposed docs.rs build defaults. Currently it
+denies `rustdoc::invalid_html_tags`; these defaults may change between releases.
+
 ## Example
 
 If the following GitHub Actions job succeeds, it's likely that docs.rs will
