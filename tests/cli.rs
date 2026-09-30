@@ -27,7 +27,7 @@ fn builds_docs_for_hello_lib() {
     // `target/<triple>/doc/<crate>/index.html`.
     let index = target_dir
         .path()
-        .join(target_triple::HOST)
+        .join(target_tuple::HOST)
         .join("doc")
         .join("hello_lib")
         .join("index.html");

@@ -125,7 +125,7 @@ fn do_main() -> Result<()> {
     }
 
     for &target in &doc_targets {
-        if target == target_triple::HOST {
+        if target == target_tuple::HOST {
             continue;
         }
         let mut child = Command::new("rustc")
@@ -149,7 +149,7 @@ fn do_main() -> Result<()> {
 
     if doc_targets.is_empty() && !proc_macro {
         let docs_rs_default_target = "x86_64-unknown-linux-gnu";
-        if docs_rs_default_target == target_triple::HOST || {
+        if docs_rs_default_target == target_tuple::HOST || {
             let mut child = Command::new("rustc")
                 .arg("-")
                 .flag_value("--target", docs_rs_default_target)
@@ -168,7 +168,7 @@ fn do_main() -> Result<()> {
         } {
             doc_targets.push(docs_rs_default_target);
         } else {
-            doc_targets.push(target_triple::HOST);
+            doc_targets.push(target_tuple::HOST);
         }
     }
 
