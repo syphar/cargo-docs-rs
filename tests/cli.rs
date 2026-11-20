@@ -20,7 +20,7 @@ fn check_docs_build(package_name: &str, triple: &str) {
         .unwrap()
         .current_dir(&crate_dir)
         .env("CARGO_TARGET_DIR", target_dir.path())
-        .env("RUSTUP_TOOLCHAIN", "nightly")
+        .env_remove("RUSTUP_TOOLCHAIN")
         .env_remove("CARGO")
         .arg("docs-rs")
         .assert()
